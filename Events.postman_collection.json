@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "583c405c-9e81-40c3-bfe8-ba522386218a",
+		"name": "Events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2860102",
+		"_collection_link": "https://red-spaceship-700499.postman.co/workspace/Sensores~899289d1-8cf0-4cc2-9c6d-7f1fa1d2518c/collection/2860102-583c405c-9e81-40c3-bfe8-ba522386218a?action=share&source=collection_link&creator=2860102"
+	},
+	"item": [
+		{
+			"name": "eventGetall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/events/"
+			},
+			"response": []
+		},
+		{
+			"name": "registerGetall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/events/"
+			},
+			"response": []
+		},
+		{
+			"name": "eventGetid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/events/2"
+			},
+			"response": []
+		},
+		{
+			"name": "eventPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Evento desde postman\",\r\n  \"description\": \"este es la prueba del post en postman\",\r\n  \"date_time\": \"2024-12-12T20:10:44.005Z\",\r\n  \"location\": \"Arequipa\",\r\n  \"category\": \"postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/events/"
+			},
+			"response": []
+		},
+		{
+			"name": "Filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Evento desde postman\",\r\n  \"description\": \"este es la prueba del post en postman\",\r\n  \"date_time\": \"2024-12-12T20:10:44.005Z\",\r\n  \"location\": \"Arequipa\",\r\n  \"category\": \"postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/events/filter/?date_time=&category=&location=Arequipa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"events",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "date_time",
+							"value": ""
+						},
+						{
+							"key": "category",
+							"value": ""
+						},
+						{
+							"key": "location",
+							"value": "Arequipa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
