@@ -79,6 +79,12 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+### **6. Ejecutar tests*
+
+```bash
+python manage.py test
+```
+
 La aplicación estará disponible en `http://127.0.0.1:8000/`.
 
 ---
@@ -96,10 +102,10 @@ La aplicación estará disponible en `http://127.0.0.1:8000/`.
 - **Descripción:** Devuelve los detalles de un evento específico.
 
 ### **3. Filtrar Eventos**
-- **Endpoint:** `/api/events/?search=<query>`
+- **Endpoint:** `/api/events/?<search>=<query>`
 - **Método:** GET
 - **Descripción:** Filtra los eventos por categoría, título o fecha.
-  - Ejemplo: `/api/events/?search=conferencia`
+  - Ejemplo: `/api/events/?category=conferencia`
 
 ### **4. Inscripción a Eventos**
 - **Endpoint:** `/api/register/`

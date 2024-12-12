@@ -7,7 +7,7 @@ from datetime import datetime
 
 class EventAPITests(TestCase):
     def setUp(self):
-        # Crear algunos eventos de prueba
+
         Event.objects.create(title="Evento 1", description="Descripción 1", date_time="2024-12-12T10:00:00Z", location="Bogotá", category="Conferencia")
         Event.objects.create(title="Evento 2", description="Descripción 2", date_time="2024-12-13T10:00:00Z", location="Ibagué", category="Taller")
         Event.objects.create(title="Evento 3", description="Descripción 3", date_time="2024-12-14T10:00:00Z", location="Bogotá", category="Conferencia")
