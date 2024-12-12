@@ -106,6 +106,7 @@ La aplicación estará disponible en `http://127.0.0.1:8000/`.
 - **Método:** POST
 - **Descripción:** Permite registrar a un usuario en un evento.
 
+![alt text](image.png)
 ---
 
 ## **Documentación de la API**
