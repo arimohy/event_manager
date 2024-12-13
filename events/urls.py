@@ -6,5 +6,4 @@ urlpatterns = [
     path('events/<int:pk>/', EventDetail.as_view(), name='event-detail'),
     path('register/', RegisterEvent.as_view(), name='register-event'),
     path('events/filter/', FilteredEventsView.as_view(), name='event-filter'),
-
 ]
